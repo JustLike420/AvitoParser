@@ -24,14 +24,25 @@
 <body>
 
 
+
 <div class="container">
+     <div class="row">
     <form action="#" method="POST">
         {% csrf_token %}
+        <div class="col">
         <input type="text" class="form-control" placeholder="www.avito.ru" name="mytextbox"
                aria-describedby="basic-addon2"/>
+        </div>
+        <div class="col">
         <input type="submit" class="btn btn-success form-control" value="Click" id='basic-addon2' name="mybtn">
-
+        </div>
     </form>
+         <div class="col">
+         <a class="btn btn-primary" data-bs-toggle="offcanvas" href="/admin" role="button" aria-controls="offcanvasExample">
+  Admin panel
+</a>
+         </div>
+     </div>
 </div>
 </body>
 </html>

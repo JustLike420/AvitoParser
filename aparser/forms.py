@@ -8,11 +8,8 @@ class ProductForm(forms.ModelForm):
         fields = (
             'title',
             'price',
-            'currency',
             'url',
-            'published_at',
         )
         widgets = {
             'title': forms.TextInput,
-            'currency': forms.TextInput,
         }

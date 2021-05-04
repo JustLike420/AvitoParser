@@ -9,9 +9,9 @@ from .forms import ProductForm
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
 
-    list_display = ('pk', 'title', 'price', 'currency', 'show_url', 'published_at',)
+    list_display = ('pk', 'title', 'price', 'show_url',)
     list_display_links = ('title',)
-    list_filter = ('currency', 'published_at', 'price',)
+    list_filter = ('price',)
     search_fields = ('title',)
     form = ProductForm
 
